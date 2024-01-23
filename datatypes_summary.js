@@ -55,3 +55,45 @@ console.log(typeof cricketer);
 // Arrays  =>  object
 // Function  =>  function
 // Object  =>  object
+
+
+//datatypes are based on memory allocation
+// Primitive datatypes->  call by value (string,number,boolean,null,undefined,BigInt,symbol) ->Stack memory
+
+// Reference/Non primitive data types -> call by reference ( array,object, function) -> heap memory
+
+// JavaScript is a dynamically typed language. This means that you don't need to specify the data type of a variable when you declare it.
+
+let myName ="Prathamesh" 
+let anotherName = myName;
+
+anotherName= "Naman"
+
+
+console.log(anotherName);
+console.log(myName); 
+
+
+// there is no change in myName , as copies are provided during assiging of values , 
+//copies are change , not the original values 
+
+
+
+// Heap memory...(non-primitive data types which are stored in stack gets reference of the original values that are in heap )
+// object 
+let userone={
+    email : "prathmeshjangle425@gmail.com";
+    age : 19 ;
+
+}
+
+let usertwo = userone;
+
+usertwo.email ="namanlalshantilaldhoot@gmail.com";
+
+
+
+console.log(usertwo.email);
+console.log(userone.email);
+
+// as both the objects are provided the refernce of same data fields in the memory 
