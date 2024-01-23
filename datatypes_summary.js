@@ -82,8 +82,8 @@ console.log(myName);
 // Heap memory...(non-primitive data types which are stored in stack gets reference of the original values that are in heap )
 // object 
 let userone={
-    email : "prathmeshjangle425@gmail.com";
-    age : 19 ;
+    email : "prathmeshjangle425@gmail.com",
+    age : 19 
 
 }
 
