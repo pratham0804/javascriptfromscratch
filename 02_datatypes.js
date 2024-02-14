@@ -10,7 +10,7 @@ let islogin = true
 // bigint datatype use kr  skte 
 // string 
 // boolean
-// null => standalone value
+// null => standalone value (object)
 // undefined => value is not defined
 // symbol => fiding uniqueness between individual components
 
