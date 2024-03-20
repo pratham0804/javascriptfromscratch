@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week days</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent)
+
+    // to find children
+    console.log(parent.children)
+    // ek html collection ke form me returnhota hai data
+    console.log(parent.children[5].innerHTML);
+
+
+    for (let i = 0; i < parent.children.length; i++) {
+        const element = parent.children[i].innerHTML;
+        console.log(element);
+        
+    }
+
+    // ab html collection pr general loop chala skte hai 
+
+
+
+    // styling bhi change kr skte hai 
+    parent.children[2].style.backgroundColor = 'green'
+
+
+
+
+    // some more properties 
+    console.log(parent.firstElementChild);  // selects entire html tag monday
+
+    console.log(parent.lastElementChild);   // selects entire html tag of saturday
+
+
+
+    // now we can also select out parent element from children 
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+
+    console.log(dayOne.parentElement)
+    // now we have the parent element , we can perform any operation.
+
+
+    // nextElementSibling selects tuesday
+    console.log(dayOne.nextElementSibling)
+    
+
+
+    // some important concept 
+    console.log("nodes: " ,parent.childNodes);
+
+    console.log("NODES: " ,parent.childNodes);
+    // IT returns a nodelist , this concept is useful in react ,
+    // learn from gpt 
+    
+
+</script>
+</html>
